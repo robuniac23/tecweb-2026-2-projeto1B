@@ -18,7 +18,7 @@
          data-id="{{ note.id }}"
          data-title="{{ note.title }}"
          data-details="{{ note.content }}">🗑️</a>
-      <a class="card-edit" href="#">✏️</a>
+      <a class="card-edit" href="{% url 'edit' note.id %}">✏️</a>
       <h3 class="card-title">{{ note.title }}</h3>
       <div class="card-content">
         <p>{{ note.content }}</p>
