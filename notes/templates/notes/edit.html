@@ -6,6 +6,7 @@
     {% csrf_token %}
     <input class="edit-title" type="text" name="titulo" value="{{ note.title }}" />
     <textarea class="edit-details autoresize" name="detalhes">{{ note.content }}</textarea>
+    <input class="edit-title" type="text" name="tag" value="{{ note.tag.name|default:'' }}" placeholder="Tag (opcional)" />
     <div class="popup-buttons">
       <a class="btn btn-cancel" href="{% url 'index' %}">Cancelar</a>
       <input class="btn btn-confirm" type="submit" value="Salvar" />
