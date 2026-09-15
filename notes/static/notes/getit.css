@@ -1,5 +1,7 @@
 html,
 body {
+  margin: 0;
+  padding: 0;
   font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #2c2c2c;
@@ -34,10 +36,11 @@ body {
 .container {
   max-width: 1400px;
   margin: 0 auto;
-  padding: 50px 40px;
+  padding: 70px 40px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 32px;
 }
 
 /*3*/
@@ -46,12 +49,12 @@ body {
   box-sizing: border-box;
   width: 572px;
   max-width: 100%;
-  padding: 12px 11px 11px;
-  margin-bottom: 40px;
+  padding: 24px;
+  margin-bottom: 0;
 
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 24px;
 
   background-color: #ffffff;
   border-radius: 5px;
@@ -145,13 +148,13 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  gap: 40px 24px;
+  gap: 56px 32px;
 }
 
 .card {
   box-sizing: border-box;
   width: 244px;
-  padding: 12px;
+  padding: 20px;
   border-radius: 10px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   position: relative;
