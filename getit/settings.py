@@ -75,8 +75,12 @@ WSGI_APPLICATION = 'getit.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'postgres',
+        'USER': 'postgres',
+        'PASSWORD': 'Rodrigo33',
+        'HOST': 'localhost',
+        'PORT': '5432',
     }
 }
 
