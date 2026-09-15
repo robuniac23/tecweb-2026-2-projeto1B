@@ -16,9 +16,9 @@
   <div class="card-container">
     {% for note in notes %}
     <div class="card">
-      {% if note.tag %}
-      <a href="{% url 'tag_detail' note.tag.id %}">{{ note.tag.name }}</a>
-      {% endif %}
+    {% for tag in note.tags.all %}
+    <a href="{% url 'tag_detail' tag.id %}">{{ tag.name }}</a>
+    {% endfor %}
       <a class="card-delete"
          href="#"
          data-id="{{ note.id }}"
